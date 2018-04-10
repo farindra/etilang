@@ -14,7 +14,7 @@ class ViolationController extends Controller
      */
     public function index()
     {
-        $items = Violation::all();
+        $items = Violation::paginate(10);
         $ee = 'uu';
         return view('violations.index',['items' => $items]);
     }
