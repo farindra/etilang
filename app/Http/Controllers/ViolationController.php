@@ -97,6 +97,9 @@ class ViolationController extends Controller
      */
     public function destroy($id)
     {
-        //
+        $violation = Violation::find($id);
+        $violation->delete();
+
+        return redirect()->route('violations.index');
     }
 }

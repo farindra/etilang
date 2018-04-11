@@ -11,6 +11,7 @@
             <th>Nomor Pelanggaran</th>
             <th>Nama Pelanggaran</th>
             <th>Identitas Pelanggaran</th>
+            <th></th>
           </tr>
         </thead>
         <tbody>
@@ -20,8 +21,12 @@
             <td>{{ $item->violator_name }}</td>
             <td>{{ $item->violator_identity_number }}</td>
             <td>
-              <a href="{{ route('violations.edit', $item->id ) }}" class="btn btn-secondary">Edit</a>
-              <a href="#" class="btn btn-danger">Hapus</a>
+              <form class="" action="{{ route('violations.destroy', $item->id ) }}" method="post">
+                <a href="{{ route('violations.edit', $item->id ) }}" class="btn btn-secondary">Edit</a>
+                {{ csrf_field() }}
+                @method('DELETE')
+                <button type="submit" class="btn btn-danger" name="delete">Hapus</button>
+              </form>
             </td>
           </tr>
           @endforeach
