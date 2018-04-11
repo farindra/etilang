@@ -16,7 +16,7 @@ Route::get('/', function () {
 });
 
 // Route::get('violations', 'ViolationController@index')->middleware('auth');
-Route::resource('violations', 'ViolationController');
+Route::resource('violations', 'ViolationController')->middleware('auth');
 
 Auth::routes();
 

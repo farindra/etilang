@@ -4,7 +4,6 @@ Pertemuan ke-3 Pembahasan :
 - Pembuatan data dummy dengan factory
 - Pembuatan view dengan blade ( menampilkan data violations )
 - Penggunaan Pagination pada controller -> view
-
 cara menjalankan migration all :
 $> php artisan migrate:fresh --seed
 
@@ -15,3 +14,12 @@ link view :
 
 Pertemuan ke-4 Pembahasan :
 ===========================
+- Membuat violation crud
+- Membuat tombol CRUD dengan bantuan hellper ROUTE()
+- Membuat form create violation, diwajibkan menggunakan csrf_field untuk standar keamanan
+- Menyimpan data form pada method store violation_name dengan elequent
+- Mendapatkan id user menggunakan Auth::user()->id atau $request->user()->id
+- Menggunakan helper @method untuk mengakali Method Form
+
+PR:
+ Buat controller update & delete violation
