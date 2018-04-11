@@ -16,7 +16,7 @@
           @foreach($items as $item)
           <tr>
             <td>{{ $item->id }}</td>
-            <td>{{ $item->nama }}</td>
+            <td>{{ $item->violation_name }}</td>
             <td>{{ $item->violation_identinty_number }}</td>
           </tr>
           @endforeach

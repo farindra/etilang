@@ -1,0 +1,17 @@
+Pertemuan ke-3 Pembahasan :
+===========================
+- Pembuatan data dummy dengan seeder
+- Pembuatan data dummy dengan factory
+- Pembuatan view dengan blade ( menampilkan data violations )
+- Penggunaan Pagination pada controller -> view
+
+cara menjalankan migration all :
+$> php artisan migrate:fresh --seed
+
+sisanya cara buat seede/factory/pagination liat di dokumentasi laravel aja ya.
+
+link view :
+.../violations
+
+Pertemuan ke-4 Pembahasan :
+===========================
