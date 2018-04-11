@@ -4,11 +4,14 @@
   <div class="row">
     <div class="col-sm-12">
       @if (session('status'))
-          <div class="alert alert-success">
-              {{ session('status') }}
-          </div>
+      <div class="alert alert-success alert-dismissible fade show" role="alert">
+        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+        {{ session('status') }}
+      </div>
       @endif
-      
+
       <h3>Ini Daftar Pelanggaran</h3>
       <table class="table">
         <a href="{{ route('violations.create') }} " class="btn btn-primary">Tambah Pelanggaran</a>
