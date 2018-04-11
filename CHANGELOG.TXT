@@ -7,7 +7,7 @@ Pertemuan ke-3 Pembahasan :
 cara menjalankan migration all :
 $> php artisan migrate:fresh --seed
 
-sisanya cara buat seede/factory/pagination liat di dokumentasi laravel aja ya.
+sisanya cara buat seeder/factory/pagination liat di dokumentasi laravel aja ya.
 
 link view :
 .../violations
