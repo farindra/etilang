@@ -86,7 +86,7 @@ class ViolationController extends Controller
         $violation->violator_name = $request->violator_name;
         $violation->save();
 
-        return redirect()->route('violations.index');
+        return redirect()->route('violations.index')->with('status' , "Data Pelanggaran ID-".$id." Berhasil diupdate.");
     }
 
     /**
@@ -100,6 +100,6 @@ class ViolationController extends Controller
         $violation = Violation::find($id);
         $violation->delete();
 
-        return redirect()->route('violations.index');
+        return redirect()->route('violations.index')->with('status' , "Data Pelanggaran ID-".$id." Berhasil dihapus.");
     }
 }
